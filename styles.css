@@ -398,13 +398,22 @@ body {
 }
 
 .skill-tag {
-    padding: 6px 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px 6px 6px;
     background-color: var(--bg-dark);
     border: 1px solid var(--border);
     border-radius: 20px;
     font-size: 13px;
     color: var(--text-secondary);
     transition: all 0.3s ease;
+}
+
+.skill-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
 }
 
 .skill-tag:hover {
