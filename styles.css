@@ -234,6 +234,29 @@ body {
     color: var(--accent-light);
 }
 
+/* Icon-only buttons (social) */
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.icon-btn:hover {
+    border-color: var(--accent-light);
+    color: var(--accent-light);
+    transform: translateY(-2px);
+}
+
 /* ----- SECTION SHARED STYLES ----- */
 .projects, .skills, .contact {
     padding: 80px 0;
