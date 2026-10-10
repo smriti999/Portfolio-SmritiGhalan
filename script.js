@@ -94,17 +94,32 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            // NOTE: This is a static site. To actually receive emails,
-            // connect this form to a service like Formspree, EmailJS, or a backend.
-            formMessage.textContent = 'Thanks, ' + name + '! Your message has been sent.';
+            const subject = document.getElementById('subject') ? document.getElementById('subject').value.trim() : '';
+            const recipient = 'mayaghalan12@gmail.com';
+            const mailSubject = subject || 'Portfolio contact from ' + name;
+            const mailBody =
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Subject: ' + (subject || '(none)') + '\n\n' +
+                'Message:\n' + message;
+
+            const mailtoLink =
+                'mailto:' + recipient +
+                '?subject=' + encodeURIComponent(mailSubject) +
+                '&body=' + encodeURIComponent(mailBody);
+
+            // Open the user's email client with the pre-filled message
+            window.location.href = mailtoLink;
+
+            formMessage.textContent = 'Opening your email app... If nothing happens, email me at ' + recipient;
             formMessage.className = 'form-message success';
             contactForm.reset();
 
-            // Clear message after 5 seconds
+            // Clear message after 8 seconds
             setTimeout(function () {
                 formMessage.textContent = '';
                 formMessage.className = 'form-message';
-            }, 5000);
+            }, 8000);
         });
     }
 
