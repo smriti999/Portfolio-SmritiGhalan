@@ -66,45 +66,47 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    /* ----- 4. CONTACT FORM HANDLING ----- */
+    /* ----- 4. CONTACT FORM HANDLING (optional, only runs if form exists) ----- */
     const contactForm = document.getElementById('contactForm');
-    const formMessage = document.getElementById('formMessage');
 
-    contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
+    if (contactForm) {
+        const formMessage = document.getElementById('formMessage');
 
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
 
-        // Simple validation
-        if (!name || !email || !message) {
-            formMessage.textContent = 'Please fill in all fields.';
-            formMessage.className = 'form-message error';
-            return;
-        }
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
 
-        // Basic email check
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(email)) {
-            formMessage.textContent = 'Please enter a valid email address.';
-            formMessage.className = 'form-message error';
-            return;
-        }
+            // Simple validation
+            if (!name || !email || !message) {
+                formMessage.textContent = 'Please fill in all fields.';
+                formMessage.className = 'form-message error';
+                return;
+            }
 
-        // NOTE: This is a static site. To actually receive emails,
-        // connect this form to a service like Formspree, EmailJS, or a backend.
-        // For now we just show a success message.
-        formMessage.textContent = 'Thanks, ' + name + '! Your message has been sent.';
-        formMessage.className = 'form-message success';
-        contactForm.reset();
+            // Basic email check
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                formMessage.textContent = 'Please enter a valid email address.';
+                formMessage.className = 'form-message error';
+                return;
+            }
 
-        // Clear message after 5 seconds
-        setTimeout(function () {
-            formMessage.textContent = '';
-            formMessage.className = 'form-message';
-        }, 5000);
-    });
+            // NOTE: This is a static site. To actually receive emails,
+            // connect this form to a service like Formspree, EmailJS, or a backend.
+            formMessage.textContent = 'Thanks, ' + name + '! Your message has been sent.';
+            formMessage.className = 'form-message success';
+            contactForm.reset();
+
+            // Clear message after 5 seconds
+            setTimeout(function () {
+                formMessage.textContent = '';
+                formMessage.className = 'form-message';
+            }, 5000);
+        });
+    }
 
     /* ----- 5. NAVBAR SHADOW ON SCROLL ----- */
     const navbar = document.querySelector('.navbar');
