@@ -189,6 +189,10 @@ body {
     font-size: 17px;
 }
 
+.hero-bio p + p {
+    margin-top: 16px;
+}
+
 .hero-buttons {
     display: flex;
     gap: 16px;
