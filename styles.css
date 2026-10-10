@@ -748,23 +748,51 @@ body {
 }
 
 .detail-title {
-    font-size: clamp(32px, 6vw, 52px);
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 20px;
+    font-size: clamp(48px, 10vw, 96px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
     color: var(--text-primary);
 }
 
 .detail-subtitle {
     max-width: 760px;
     color: var(--text-secondary);
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 32px;
+    font-size: clamp(18px, 2.5vw, 24px);
+    line-height: 1.6;
+    margin-bottom: 40px;
 }
 
 .detail-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
     margin-bottom: 64px;
+}
+
+.detail-tag-pill {
+    display: inline-block;
+    padding: 14px 36px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.view-project-link {
+    color: var(--accent-light);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.view-project-link:hover {
+    color: #fff;
 }
 
 .detail-section {
