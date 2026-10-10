@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ====== EDIT YOUR TITLE HERE ====== -->
+    <title>Your Name — Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- ====== EDIT YOUR NAME HERE ====== -->
+            <a href="#home" class="nav-logo">YourName</a>
+
+            <!-- Desktop menu -->
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Mobile hamburger button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu (hidden by default) -->
+    <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+
+    <!-- ========== HERO / ABOUT SECTION ========== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <!-- ====== EDIT YOUR NAME & TITLE HERE ====== -->
+            <h1 class="hero-name">Your Name</h1>
+            <p class="hero-title">Software Developer</p>
+
+            <!-- ====== EDIT YOUR SHORT BIO HERE ====== -->
+            <p class="hero-bio">
+                I'm a full-stack developer who loves building clean, fast, and
+                user-friendly websites and apps. I work across the whole stack —
+                from databases and APIs to beautiful front-end interfaces. I enjoy
+                learning new technologies and solving real-world problems with code.
+            </p>
+
+            <div class="hero-buttons">
+                <!-- ====== EDIT YOUR CV LINKS HERE (or remove the buttons) ====== -->
+                <a href="#" class="btn btn-primary">View CV</a>
+                <a href="#" class="btn btn-secondary">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A few things I've built recently.</p>
+
+            <!-- Filter buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+
+            <!-- ====== EDIT / ADD YOUR PROJECTS HERE ====== -->
+            <div class="projects-grid">
+
+                <!-- Project Card 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <span class="project-emoji">💰</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project One</h3>
+                        <p class="project-desc">
+                            A short description of what this project does and the
+                            problems it solves.
+                        </p>
+                        <span class="project-tag">Web Development</span>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <span class="project-emoji">📊</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Two</h3>
+                        <p class="project-desc">
+                            Another project description. Mention the tech stack or
+                            key features here.
+                        </p>
+                        <span class="project-tag">Web Development</span>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                        <span class="project-emoji">📱</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Three</h3>
+                        <p class="project-desc">
+                            A mobile app you built. Describe its purpose and who
+                            it helps.
+                        </p>
+                        <span class="project-tag">Mobile App</span>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card" data-category="other">
+                    <div class="project-image" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                        <span class="project-emoji">🔧</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Four</h3>
+                        <p class="project-desc">
+                            A tool, script, or experiment you're proud of.
+                        </p>
+                        <span class="project-tag">Tools</span>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+                        <span class="project-emoji">🛒</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Five</h3>
+                        <p class="project-desc">
+                            E-commerce or business platform you developed.
+                        </p>
+                        <span class="project-tag">Web Development</span>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card" data-category="other">
+                    <div class="project-image" style="background: linear-gradient(135deg, #a8edea, #fed6e3);">
+                        <span class="project-emoji">🤖</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Project Six</h3>
+                        <p class="project-desc">
+                            AI / automation or any other interesting project.
+                        </p>
+                        <span class="project-tag">AI / Automation</span>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ====== END OF PROJECTS ====== -->
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <p class="section-subtitle">Tools and technologies I work with.</p>
+
+            <!-- ====== EDIT YOUR SKILLS HERE ====== -->
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <h3 class="skill-heading">Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Tailwind</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-heading">Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-heading">DevOps &amp; Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-heading">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">PHP</span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ====== END OF SKILLS ====== -->
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Build Something Together</h2>
+            <p class="section-subtitle">
+                Have a project in mind or just want to say hi? I'm always open to
+                new opportunities.
+            </p>
+
+            <div class="contact-content">
+                <!-- Contact info -->
+                <div class="contact-info">
+                    <!-- ====== EDIT YOUR CONTACT DETAILS HERE ====== -->
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:you@example.com" class="contact-value">you@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <p class="contact-label">Phone</p>
+                            <a href="tel:+977000000000" class="contact-value">+977 00 000 0000</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <p class="contact-label">Location</p>
+                            <p class="contact-value">Your City, Country</p>
+                        </div>
+                    </div>
+
+                    <!-- Social links -->
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+
+                <!-- Contact form -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
