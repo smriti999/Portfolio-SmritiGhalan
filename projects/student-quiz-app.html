@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Quiz App | Smriti Ghalan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">SmritiGhalan</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="../index.html#home" class="mobile-link">Home</a></li>
+        <li><a href="../index.html#projects" class="mobile-link">Projects</a></li>
+        <li><a href="../index.html#skills" class="mobile-link">Skills</a></li>
+        <li><a href="../index.html#contact" class="mobile-link">Contact</a></li>
+    </ul>
+
+    <!-- ========== PROJECT DETAIL ========== -->
+    <section class="project-detail">
+        <div class="container">
+            <!-- Back to projects -->
+            <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+
+            <!-- Category tags -->
+            <div class="detail-tags">
+                <span class="detail-tag">Android Development</span>
+                <span class="detail-tag">Education</span>
+                <span class="detail-tag">Local Database</span>
+                <span class="detail-tag">Quiz &amp; History</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="detail-title">Student Quiz App</h1>
+
+            <!-- Description -->
+            <p class="detail-subtitle">
+                An Android quiz application that allows users to answer questions,
+                view quiz results, and review previous attempts. It uses local
+                database storage to maintain quiz history and provides an option
+                to clear saved records.
+            </p>
+
+            <!-- Project mockup / preview -->
+            <div class="detail-mockup">
+                <div class="detail-mockup-bar">
+                    <span class="mockup-dot red"></span>
+                    <span class="mockup-dot yellow"></span>
+                    <span class="mockup-dot green"></span>
+                    <span class="mockup-url">studentquiz.app</span>
+                </div>
+                <div class="detail-mockup-screen" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    <span class="mockup-app-emoji">📝</span>
+                    <div class="mockup-app-name">Student Quiz App</div>
+                    <p class="mockup-app-tagline">Answer questions, view results, review attempts, and manage quiz history with local storage.</p>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="detail-section">
+                <h2 class="detail-heading">Tech Stack</h2>
+
+                <div class="tech-group">
+                    <h3 class="tech-group-title">Languages</h3>
+                    <div class="tech-chips">
+                        <span class="tech-chip">Kotlin</span>
+                    </div>
+                </div>
+
+                <div class="tech-group">
+                    <h3 class="tech-group-title">Mobile Development</h3>
+                    <div class="tech-chips">
+                        <span class="tech-chip">Jetpack Compose</span>
+                        <span class="tech-chip">Android Studio</span>
+                    </div>
+                </div>
+
+                <div class="tech-group">
+                    <h3 class="tech-group-title">Database</h3>
+                    <div class="tech-chips">
+                        <span class="tech-chip">Room Database</span>
+                    </div>
+                </div>
+
+                <div class="tech-group">
+                    <h3 class="tech-group-title">Tools and Workflow</h3>
+                    <div class="tech-chips">
+                        <span class="tech-chip">Git</span>
+                        <span class="tech-chip">GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overview -->
+            <div class="detail-section">
+                <h2 class="detail-heading">🚀 Overview</h2>
+                <p class="detail-paragraph">
+                    The Student Quiz App is an Android application developed with
+                    Kotlin and Jetpack Compose. It allows students to answer quiz
+                    questions, view their results immediately after completion,
+                    and review their previous quiz attempts. The app uses Room
+                    Database for local storage, so quiz history is persisted on
+                    the device and remains available even after the app is closed.
+                </p>
+                <p class="detail-paragraph">
+                    Built with a modern declarative UI using Jetpack Compose, the
+                    app provides a smooth and responsive experience. The Room
+                    database layer abstracts SQLite operations, making it easy to
+                    insert, query, and delete quiz records. Users can also clear
+                    all saved records whenever they want to start fresh.
+                </p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="detail-section">
+                <h2 class="detail-heading">✨ Key Features</h2>
+                <ul class="feature-list">
+                    <li><strong>Quiz Questions:</strong> Users can answer a set of quiz questions presented in a clean, interactive format.</li>
+                    <li><strong>Quiz Results:</strong> After completing a quiz, users immediately see their score and performance summary.</li>
+                    <li><strong>Review Previous Attempts:</strong> All quiz attempts are saved locally and can be reviewed at any time.</li>
+                    <li><strong>Local Database Storage:</strong> Room Database is used to persist quiz history on the device.</li>
+                    <li><strong>Clear Records:</strong> Users can delete all saved quiz records to reset their history.</li>
+                    <li><strong>Declarative UI:</strong> Built with Jetpack Compose for a modern, reactive user interface.</li>
+                    <li><strong>Offline-First:</strong> Since data is stored locally, the app works fully offline.</li>
+                    <li><strong>Clean Architecture:</strong> Separation of concerns between UI, business logic, and data layers.</li>
+                </ul>
+            </div>
+
+            <!-- Technical Challenges -->
+            <div class="detail-section">
+                <h2 class="detail-heading">💡 Technical Challenges</h2>
+
+                <div class="challenge-block">
+                    <h3 class="challenge-title">Challenge 1: Persisting Quiz History with Room</h3>
+                    <p class="detail-paragraph"><em>Problem:</em> Quiz attempts needed to be saved locally so users could review them later, including across app restarts. Using raw SQLite would have required a lot of boilerplate code.</p>
+                    <p class="detail-paragraph"><em>Solution:</em> Integrated Room Database as an abstraction layer over SQLite. Defined entities for quiz records, Data Access Objects (DAOs) for CRUD operations, and a database class. Room handles schema management and reduces boilerplate significantly.</p>
+                </div>
+
+                <div class="challenge-block">
+                    <h3 class="challenge-title">Challenge 2: Displaying and Managing Quiz History</h3>
+                    <p class="detail-paragraph"><em>Problem:</em> Showing a list of previous attempts that updates in real time as new quizzes are completed, while also allowing users to clear all records, required careful state handling.</p>
+                    <p class="detail-paragraph"><em>Solution:</em> Used Room's observable queries (Flow) so the history list automatically recomposes whenever data changes. The clear records operation deletes all entries and the UI updates instantly, giving users immediate feedback.</p>
+                </div>
+
+                <div class="challenge-block">
+                    <h3 class="challenge-title">Challenge 3: Building the Quiz Flow with Compose</h3>
+                    <p class="detail-paragraph"><em>Problem:</em> Managing the quiz flow—question navigation, answer selection, score calculation, and result display—in a declarative UI framework can be complex.</p>
+                    <p class="detail-paragraph"><em>Solution:</em> Modeled the quiz state with a ViewModel and Compose state. Each screen (question, result, history) reads from and updates the state, ensuring the UI stays in sync. Score is calculated based on selected answers and stored once the quiz finishes.</p>
+                </div>
+            </div>
+
+            <!-- Outcome / Lessons Learned -->
+            <div class="detail-section">
+                <h2 class="detail-heading">📈 Outcome / Lessons Learned</h2>
+
+                <div class="outcome-block">
+                    <h3 class="outcome-title">Architecture &amp; Engineering Excellence</h3>
+                    <ul class="feature-list">
+                        <li><strong>Room Database Mastery:</strong> Gained practical experience with Room entities, DAOs, and database migrations.</li>
+                        <li><strong>Jetpack Compose:</strong> Strengthened skills in building reactive UIs with state management and composition.</li>
+                        <li><strong>Offline-First Design:</strong> Learned to build apps that work reliably without a network connection using local storage.</li>
+                    </ul>
+                </div>
+
+                <div class="outcome-block">
+                    <h3 class="outcome-title">Product Impact</h3>
+                    <ul class="feature-list">
+                        <li><strong>Self-Paced Learning:</strong> Students can take quizzes and track their progress over time.</li>
+                        <li><strong>Performance Tracking:</strong> Reviewing past attempts helps students identify areas for improvement.</li>
+                        <li><strong>Data Control:</strong> Users have full control over their records, with the ability to clear history anytime.</li>
+                    </ul>
+                </div>
+
+                <div class="outcome-block">
+                    <h3 class="outcome-title">Real-World Learning</h3>
+                    <ul class="feature-list">
+                        <li><strong>Local Persistence:</strong> Understood how to choose and implement the right local storage solution for an Android app.</li>
+                        <li><strong>State in Compose:</strong> Learned to manage complex UI state cleanly using ViewModels and observable data streams.</li>
+                        <li><strong>User Experience:</strong> Recognized the importance of immediate feedback and intuitive record management in mobile apps.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer nav -->
+            <div class="detail-footer">
+                <a href="../index.html#projects" class="back-link">← Back to All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smriti Ghalan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
