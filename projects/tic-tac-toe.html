@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe — Play and Have Fun | Smriti Ghalan</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">SmritiGhalan</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="../index.html#home" class="mobile-link">Home</a></li>
+        <li><a href="../index.html#projects" class="mobile-link">Projects</a></li>
+        <li><a href="../index.html#skills" class="mobile-link">Skills</a></li>
+        <li><a href="../index.html#contact" class="mobile-link">Contact</a></li>
+    </ul>
+
+    <!-- ========== PROJECT DETAIL ========== -->
+    <section class="project-detail">
+        <div class="container">
+            <!-- Back to projects -->
+            <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+
+            <!-- Category tags -->
+            <div class="detail-tags">
+                <span class="detail-tag">Android Application</span>
+                <span class="detail-tag">Mobile Game</span>
+                <span class="detail-tag">Declarative UI</span>
+                <span class="detail-tag">Game Logic</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="detail-title">Tic-Tac-Toe — Play and Have Fun</h1>
+
+            <!-- Description -->
+            <p class="detail-subtitle">
+                An interactive Android game featuring a game board, different
+                screens, game modes, and result handling. Built to practise Kotlin,
+                declarative UI design, and Android app development.
+            </p>
+
+            <!-- View code button -->
+            <div class="detail-actions">
+                <a href="https://github.com/smriti999/Tic-Tac-Toe-Play-and-Have-Fun" class="btn btn-primary" target="_blank" rel="noopener">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
+                    </svg>
+                    View Code
+                </a>
+            </div>
+
+            <!-- Project mockup / preview -->
+            <div class="detail-mockup">
+                <div class="detail-mockup-bar">
+                    <span class="mockup-dot red"></span>
+                    <span class="mockup-dot yellow"></span>
+                    <span class="mockup-dot green"></span>
+                    <span class="mockup-url">tictactoe.app</span>
+                </div>
+                <div class="detail-mockup-screen" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <span class="mockup-app-emoji">❌</span>
+                    <div class="mockup-app-name">Tic-Tac-Toe</div>
+                    <p class="mockup-app-tagline">An interactive Android game with multiple screens, game modes, and result handling.</p>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="detail-section">
+                <h2 class="detail-heading">Tech Stack</h2>
+
+                <div class="tech-group">
+                    <h3 class="tech-group-title">Languages</h3>
+                    <div class="tech-chips">
+                        <span class="tech-chip">Kotlin</span>
+                    </div>
+                </div>
+
+                <div class="tech-group">
+                    <h3 class="tech-group-title">Mobile Development</h3>
+                    <div class="tech-chips">
+                        <span class="tech-chip">Jetpack Compose</span>
+                        <span class="tech-chip">Android Studio</span>
+                    </div>
+                </div>
+
+                <div class="tech-group">
+                    <h3 class="tech-group-title">Tools and Workflow</h3>
+                    <div class="tech-chips">
+                        <span class="tech-chip">Git</span>
+                        <span class="tech-chip">GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overview -->
+            <div class="detail-section">
+                <h2 class="detail-heading">🚀 Overview</h2>
+                <p class="detail-paragraph">
+                    Tic-Tac-Toe — Play and Have Fun is an interactive Android game
+                    developed with Kotlin and Jetpack Compose. The project was built
+                    as a hands-on exercise to practise modern Android development,
+                    declarative UI design, and game logic implementation. It features
+                    a clean game board, multiple screens, different game modes, and
+                    proper handling of game results.
+                </p>
+                <p class="detail-paragraph">
+                    Built entirely with Jetpack Compose, the app demonstrates a
+                    declarative approach to building Android UIs. State management
+                    drives the game flow—from the start screen through gameplay to
+                    the result screen—making the code predictable and easy to
+                    follow. The game supports both player-versus-player and other
+                    modes, with win, lose, and draw conditions handled cleanly.
+                </p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="detail-section">
+                <h2 class="detail-heading">✨ Key Features</h2>
+                <ul class="feature-list">
+                    <li><strong>Interactive Game Board:</strong> A responsive 3×3 grid where players tap cells to place their marks (X or O).</li>
+                    <li><strong>Multiple Screens:</strong> Distinct screens for the start menu, gameplay, and results, managed through navigation.</li>
+                    <li><strong>Game Modes:</strong> Different game modes to choose from, adding variety to the experience.</li>
+                    <li><strong>Result Handling:</strong> Clear detection and display of win, loss, and draw outcomes with appropriate messaging.</li>
+                    <li><strong>Declarative UI:</strong> Built entirely with Jetpack Compose for a modern, reactive user interface.</li>
+                    <li><strong>State Management:</strong> Game state is managed reactively so the UI updates instantly as the game progresses.</li>
+                    <li><strong>Turn Indication:</strong> Visual feedback showing whose turn it is during gameplay.</li>
+                    <li><strong>Restart Functionality:</strong> Players can quickly start a new game without restarting the app.</li>
+                </ul>
+            </div>
+
+            <!-- Technical Challenges -->
+            <div class="detail-section">
+                <h2 class="detail-heading">💡 Technical Challenges</h2>
+
+                <div class="challenge-block">
+                    <h3 class="challenge-title">Challenge 1: Managing Game State Reactively</h3>
+                    <p class="detail-paragraph"><em>Problem:</em> A tic-tac-toe game requires the UI to update immediately every time a player makes a move. Without proper state management, the board can become inconsistent with the underlying game logic.</p>
+                    <p class="detail-paragraph"><em>Solution:</em> Used Jetpack Compose's state management to hold the board state as observable state. Each move updates the state, triggering automatic recomposition of the board UI. This keeps the displayed board perfectly in sync with the game logic.</p>
+                </div>
+
+                <div class="challenge-block">
+                    <h3 class="challenge-title">Challenge 2: Implementing Win Detection Logic</h3>
+                    <p class="detail-paragraph"><em>Problem:</em> Detecting a win or draw correctly requires checking all possible winning combinations (rows, columns, diagonals) after every move, while avoiding false positives and handling the draw condition.</p>
+                    <p class="detail-paragraph"><em>Solution:</em> Implemented a dedicated function that checks all eight winning lines after each move. If a line is fully occupied by the same player, a win is declared. If the board is full with no winner, a draw is declared. The result is then reflected in the UI.</p>
+                </div>
+
+                <div class="challenge-block">
+                    <h3 class="challenge-title">Challenge 3: Navigating Between Multiple Screens</h3>
+                    <p class="detail-paragraph"><em>Problem:</em> The app has multiple screens (start, game, result), and moving between them while preserving or resetting game state can be tricky in a declarative UI framework.</p>
+                    <p class="detail-paragraph"><em>Solution:</em> Used Jetpack Compose Navigation to define routes for each screen. Game state is scoped appropriately so that starting a new game resets the board, while navigating back to the menu retains a clean starting point. This gives a smooth, intuitive flow.</p>
+                </div>
+            </div>
+
+            <!-- Outcome / Lessons Learned -->
+            <div class="detail-section">
+                <h2 class="detail-heading">📈 Outcome / Lessons Learned</h2>
+
+                <div class="outcome-block">
+                    <h3 class="outcome-title">Architecture &amp; Engineering Excellence</h3>
+                    <ul class="feature-list">
+                        <li><strong>Kotlin &amp; Jetpack Compose:</strong> Strengthened Kotlin skills and gained practical experience building a complete app with declarative UI.</li>
+                        <li><strong>State-Driven UI:</strong> Learned to think in terms of state and recomposition rather than imperative UI updates.</li>
+                        <li><strong>Game Logic:</strong> Practiced implementing clean, testable game logic for win/draw detection and turn management.</li>
+                    </ul>
+                </div>
+
+                <div class="outcome-block">
+                    <h3 class="outcome-title">Product Impact</h3>
+                    <ul class="feature-list">
+                        <li><strong>Fun &amp; Engaging:</strong> Delivered a polished, interactive game that is enjoyable to play.</li>
+                        <li><strong>Clear Feedback:</strong> Players always know whose turn it is and receive immediate results when the game ends.</li>
+                        <li><strong>Smooth Flow:</strong> Intuitive navigation between menu, gameplay, and results makes the app easy to use.</li>
+                    </ul>
+                </div>
+
+                <div class="outcome-block">
+                    <h3 class="outcome-title">Real-World Learning</h3>
+                    <ul class="feature-list">
+                        <li><strong>Declarative UI Paradigm:</strong> Understood how Jetpack Compose simplifies UI development through composition and state.</li>
+                        <li><strong>State Management:</strong> Learned that well-managed state is the foundation of a bug-free, reactive app.</li>
+                        <li><strong>Mobile App Workflow:</strong> Experienced the full cycle of building, testing, and refining an Android app in Android Studio.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer nav -->
+            <div class="detail-footer">
+                <a href="../index.html#projects" class="back-link">← Back to All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smriti Ghalan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
